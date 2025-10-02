@@ -1,17 +1,16 @@
-# include <stdio.h>
+#include <stdio.h>
 
-int main(void) {
-
+int main() {
 	int sat, min, dodmin, ukupmin;
 
 	printf("Upisi sate: ");
-	scanf_s("%d", &sat);
+	scanf("%d", &sat);
 
 	printf("Upisi minute: ");
-	scanf_s("%d", &min);
+	scanf("%d", &min);
 
 	printf("Upisi dodatne minute: ");
-	scanf_s("%d", &dodmin);
+	scanf("%d", &dodmin);
 
 	ukupmin = dodmin + min;
 	sat = sat + (ukupmin / 60);
@@ -19,8 +18,4 @@ int main(void) {
 	ukupmin = ukupmin % 60;
 
 	printf("Nakon proteklih %d minuta je vrijeme %d:%d", dodmin, sat, ukupmin);
-
-
-
-
 }

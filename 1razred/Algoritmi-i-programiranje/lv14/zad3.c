@@ -1,11 +1,10 @@
-# include <stdio.h>
-# include <math.h>
-int main(void) {
+#include <stdio.h>
 
+int main() {
 	int sec;
 
 	printf("Upisi broj sekundi: ");
-	scanf_s("%d", &sec);
+	scanf("%d", &sec);
 
 	printf("U %d sekundi ima: ", sec);
 	printf("\n");
@@ -14,6 +13,4 @@ int main(void) {
 	printf("- min: %d", ((sec % 3600) / 60));
 	printf("\n");
 	printf("- sec: %d", sec % 60);
-
-
 }

@@ -1,0 +1,2 @@
+https://tsrb.readthedocs.io/en/latest/predmeti/por/skripta/Upute%20Tipovi%20virtualne%20mreze%20Virtualbox.html
+https://docs.vmware.com/en/VMware-Workstation-Pro/17/com.vmware.ws.using.doc/GUID-D9B0A52D-38A2-45D7-A9EB-987ACE77F93C.html

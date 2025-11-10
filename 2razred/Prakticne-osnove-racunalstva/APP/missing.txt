@@ -1,2 +1,4 @@
 linuxmint-22-cinnamon-64bit.iso
 SW_DVD9_Win_Pro_10_21H1_64BIT_English_Pro_Ent_EDU_N_MLF_X22-55036.iso
+Windows10_Eng_Eng.nvram
+Windows10_Eng_Eng.vmdk

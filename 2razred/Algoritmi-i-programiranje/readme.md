@@ -50,3 +50,8 @@
 
 [datoteke](https://github.com/Josakko/tsrb/blob/main/2razred/Algoritmi-i-programiranje/tests-and-revisions/datoteke/datoteke.pdf)  
 [provjera - datoteke](https://github.com/Josakko/tsrb/blob/main/2razred/Algoritmi-i-programiranje/tests-and-revisions/provjera%20datoteke.txt)  
+
+## Božićni zadatci
+
+[Božićni pokloni](https://github.com/Josakko/tsrb/blob/main/2razred/Algoritmi-i-programiranje/xmas/pokloni/Bo%C5%BEi%C4%87ni%20pokloni.pdf)  
+[Božićni kolači](https://github.com/Josakko/tsrb/blob/main/2razred/Algoritmi-i-programiranje/xmas/kolaci/Bo%C5%BEi%C4%87ni%20kola%C4%8Di.pdf)  

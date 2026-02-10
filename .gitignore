@@ -1,5 +1,6 @@
 # dirs
 .vscode
+.idea
 
 # files
 # had to comment out to commit some *needed* exe files

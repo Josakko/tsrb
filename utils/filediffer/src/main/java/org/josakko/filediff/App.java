@@ -26,13 +26,13 @@ public class App {
             }
 
             System.out.println(Utils.GREEN + "[+] File " + file.path.toString() + " is unique" + Utils.RESET);
-            // System.out.println(Utils.GREEN + "[+] File " + Utils.RESET + Utils.GREEN_BG + file.path.toString() + Utils.RESET + Utils.GREEN + " isunique" + Utils.RESET);
+            // System.out.println(Utils.GREEN + "[+] File " + Utils.RESET + Utils.GREEN_BG + file.path.toString() + Utils.RESET + Utils.GREEN + " is unique" + Utils.RESET);
             return;
         }
 
         for (FileData equalFile : equalFiles) {
             System.out.println(Utils.RED + "[-] file " + file.path.toString() + " is equal to a file in the target directory " + equalFile.path.toString() + Utils.RESET);
-            // System.out.println(Utils.RED + "[-] file " + Utils.RESET + Utils.RED_BG + file.path.toString() + Utils.RESET + Utils.RED + " is equal to afile in the target directory " + Utils.RESET + Utils.RED_BG + equalFile.path.toString() + Utils.RESET);
+            // System.out.println(Utils.RED + "[-] file " + Utils.RESET + Utils.RED_BG + file.path.toString() + Utils.RESET + Utils.RED + " is equal to a file in the target directory " + Utils.RESET + Utils.RED_BG + equalFile.path.toString() + Utils.RESET);
         }
     }
 
@@ -55,7 +55,7 @@ public class App {
         Path targetPath = Path.of(args[0]);
         Path toCheckPath = Path.of(args[1]);
         if (!Files.isDirectory(targetPath) || !Files.exists(toCheckPath)) {
-            System.out.println(Utils.YELLOW + "[!] Supplied targed path or to check path is not a valid directory path!" + Utils.RESET);
+            System.out.println(Utils.YELLOW + "[!] Supplied target path or to check path is not a valid directory path!" + Utils.RESET);
             return;
         }
 

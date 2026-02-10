@@ -1,6 +1,6 @@
 # JK_filediff
 
-Program that checks if the supplied filesnames are contained within a specified directory
+Program that checks if the supplied filenames are contained within a specified directory
 
 ## Usage
 

@@ -7,11 +7,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class App {
     public static Directory targetDir;
     public static Directory toCheckDir;
     public static boolean copyUnique = false;
+    public static boolean uniqueOnly = false;
     public static Path dirForCopy;
 
     public static void compareFile(FileData file) {
@@ -30,6 +32,8 @@ public class App {
             return;
         }
 
+        if(uniqueOnly)
+            return;
         for (FileData equalFile : equalFiles) {
             System.out.println(Utils.RED + "[-] file " + file.path.toString() + " is equal to a file in the target directory " + equalFile.path.toString() + Utils.RESET);
             // System.out.println(Utils.RED + "[-] file " + Utils.RESET + Utils.RED_BG + file.path.toString() + Utils.RESET + Utils.RED + " is equal to a file in the target directory " + Utils.RESET + Utils.RED_BG + equalFile.path.toString() + Utils.RESET);
@@ -66,7 +70,12 @@ public class App {
             return;
         }
 
-        if (args.length >= 3 && (args[2].equals("-cp") || args[2].equals("--copy"))) {
+        if(Arrays.stream(args).anyMatch(str -> str.equals("-u") || str.equals("--unique"))) {
+            uniqueOnly = true;
+            System.out.println("[i] Will print only unique files.");
+        }
+
+        if (Arrays.stream(args).anyMatch(str -> str.equals("-cp") || str.equals("--copy"))) {
             copyUnique = true; 
             dirForCopy = toCheckPath;
             
